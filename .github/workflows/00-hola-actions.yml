@@ -18,14 +18,14 @@ permissions: {}
 jobs:
   saludo:
     name: Saludo
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
       - name: Imprimir un mensaje
         run: echo "Hola desde GitHub Actions"
 
       - name: Ver el contexto de ejecución
         run: |
-          echo "Sistema operativo del runner : $RUNNER_OS"
+          echo "Sistema operativo del runner : $RUNNER_OSq"
           echo "Repositorio                  : $GITHUB_REPOSITORY"
           echo "Rama o tag                   : $GITHUB_REF_NAME"
           echo "Evento que disparó el run    : $GITHUB_EVENT_NAME"
